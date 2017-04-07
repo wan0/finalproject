@@ -1,0 +1,424 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+    
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+    
+    body {
+        line-height: 1;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    blockquote,
+    q {
+        quotes: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    /************* beginning *************/
+    
+    * {
+        box-sizing: border-box;
+        font-family: 微軟正黑體;
+        font-size: 15px;
+    }
+    
+    body {
+        font-family: 微軟正黑體;
+        font-size: 15px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    .wrap {
+        width: 1002px;
+        margin: 0 auto;
+    }
+    /**** bar ****/
+    
+    .bar {
+        background: #f6f6f6;
+        height: 28px;
+    }
+    
+    .bar ul {
+        float: right;
+        margin-right: 5px;
+    }
+    
+    .bar ul li {
+        float: left;
+        margin: 5px;
+    }
+    
+    .bar ul li img {
+        margin-right: 5px;
+        float: left;
+    }
+    
+    .bar ul li span {
+        float: left;
+    }
+    
+    .facebook a {
+        color: #4460a0;
+        text-decoration: none;
+    }
+    
+    .twitter a {
+        color: #00aaec;
+        text-decoration: none;
+    }
+    
+    .facebook {
+        border-right: 2px solid #cccccc;
+        padding-right: 8px;
+    }
+    
+    .clearfix {
+        clear: both;
+    }
+    /**** header ****/
+    
+    .header {
+        background: white;
+        height: 52px;
+    }
+    
+    .header h1 {
+        float: left;
+        display: block;
+        width: 170px;
+        height: 36px;
+        background-image: url(../images/logo.png);
+        text-indent: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 10px 0 0 20px;
+        cursor: pointer;
+    }
+    
+    .menu {
+        float: right;
+        margin: 17px 22px 0 10px;
+        /*下拉選單*/
+        position: relative;
+    }
+    
+    .menu > li {
+        float: left;
+        margin-left: 30px;
+    }
+    
+    .menu a {
+        color: #00cc99;
+        text-decoration: none;
+        padding: 0 10px;
+        /* 向內推，底線就可加長*/
+    }
+    
+    .menu > li > a:hover,
+    .dropdown.active {
+        border-bottom: 4px solid #00cc99;
+        padding-bottom: 14px;
+    }
+    /*下拉選單*/
+    
+    .menu ul {
+        display: none;
+        position: absolute;
+        top: 40px;
+        z-index: 10000;
+    }
+    
+    .menu ul li {
+        border: 1px solid #00cc99;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    /**** banner ****/
+    
+    .banner {
+        margin: auto;
+    }
+    /**** intro ****/
+    
+    .intro {
+        margin: 62px auto;
+    }
+    
+    .intro .intro_li {
+        float: left;
+        width: 302px;
+        text-align: center;
+        margin: 0 15px;
+        padding: 20px;
+        border-left: 1px solid #f1f1f1;
+        border-right: 1px solid #f1f1f1;
+        border-bottom: 1px solid #f1f1f1;
+        border-radius: 5px;
+        box-shadow: 0px 2px 3px gray;
+    }
+    
+    .intro h3 {
+        margin: 12px;
+    }
+    
+    .intro .intro_li p {
+        line-height: 1.2em;
+        text-align: justify;
+    }
+    
+    .intro_jQuery {
+        text-align: left;
+        line-height: 1.2em;
+        /*list-style: disc;*/
+    }
+    
+    .intro.clearfix {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /**** table ****/
+    
+    .table h2 {
+        text-align: center;
+    }
+    
+    .table table {
+        margin: 30px auto 60px auto;
+        text-align: left;
+    }
+    
+    .table th,
+    .table td {
+        padding: 12px 20px;
+        width: 190px;
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+    }
+    
+    .table th {
+        background: #f7f7f7;
+        font-weight: bold;
+    }
+    
+    .special_word {
+        color: #00a67d;
+    }
+    /**** form ****/
+    
+    form {
+        width: 1002px;
+        height: 405px;
+        background: url(../images/bg.png) repeat-x #009872;
+        position: relative;
+        color: white;
+        /*padding-bottom: 270px;*/
+    }
+    
+    form h2 {
+        text-align: center;
+        padding: 36px 0 28px 0;
+        line-height: 150%
+    }
+    
+    textarea {
+        position: absolute;
+        left: 20px;
+        /*bottom: 20px;*/
+        resize: none;
+        height: 245px;
+        width: 460px;
+        border: none;
+        border-radius: 3px;
+    }
+    
+    .form_right {
+        position: absolute;
+        right: 20px;
+    }
+    
+    .form_right input {
+        margin: 5px 0 20px 0;
+        width: 460px;
+        padding: 5px;
+        border: none;
+        border-radius: 3px;
+    }
+    
+    .form_right label {
+        display: block;
+    }
+    
+    .btn {
+        position: absolute;
+        right: 20px;
+        top: 350px;
+        background: #00cc99;
+        width: 70px;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background: #00ccAA;
+    }
+    /**** footer ****/
+    
+    footer {
+        height: 120px;
+        margin: 30px 20px 0 20px;
+    }
+    
+    footer img {
+        float: left;
+    }
+    
+    footer ul {
+        float: right;
+    }
+    
+    footer ul a {
+        text-decoration: none;
+        color: #e12d80;
+    }
+    
+    .top {
+        position: fixed;
+        right: -30px;
+        bottom: 5%;
+    }
+    
+    .top img {
+        width: 50%;
+        height: 50%;
+    }
